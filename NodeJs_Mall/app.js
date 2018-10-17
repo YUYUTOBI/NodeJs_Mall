@@ -21,7 +21,7 @@ app.use(morgan('combined'));
 app.use(bodyParser.json());
 
 // 注册路由
-//app.use("/users", require('./router/account'));
+app.use("/users", require("./Router/user"));
 
 // 注册异常处理中间件
 app.use((err, req, res, next)=>{
