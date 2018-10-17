@@ -1,0 +1,9 @@
+{
+  "name": "NodeJs-Day02",
+  "version": "1.0.0",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "iconv-lite": "^0.4.24",
+    "mongoose": "^5.3.3"
+  }
+}
