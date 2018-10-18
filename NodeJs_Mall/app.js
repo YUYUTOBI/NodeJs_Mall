@@ -22,6 +22,7 @@ app.use(bodyParser.json());
 
 // 注册路由
 app.use("/users", require("./Router/user"));
+app.use("/categoty",require("./Router/categoty"))
 
 // 注册异常处理中间件
 app.use((err, req, res, next)=>{
