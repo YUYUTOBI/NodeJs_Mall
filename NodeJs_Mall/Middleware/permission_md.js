@@ -24,7 +24,7 @@ module.exports = function (request, response, next) {
                 let urls = permission.urls;
                 for (let j = 0; j < urls.length; j++) {
                     let reqUrl = request.url;
-                    let url = urls[i];
+                    let url = urls[j];
                     if (url.test(reqUrl)) {
                         isGo = true;
                         break outer;
