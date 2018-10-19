@@ -33,12 +33,13 @@ async function updateById(id, category) {
 
 }
 
-async function findByPage(page=1) {
- let offset=(page-1)*config.PAGE_SIZE;
-  return await Category.find().skip(offset).limit(config.PAGE_SIZE);
+async function findByPage(page = 1) {
+    let offset = (page - 1) * config.PAGE_SIZE;
+    return await Category.find().skip(offset).limit(config.PAGE_SIZE);
 
 }
-module.exports={
+
+module.exports = {
     addItem,
     deleteById,
     updateById,

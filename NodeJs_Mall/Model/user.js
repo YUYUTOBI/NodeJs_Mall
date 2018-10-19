@@ -17,7 +17,7 @@ const schema = new mongoose.Schema({
         type: Number,
         default: 0 // 0是商家， 10086是管理员
     },
-    created:{
+    created: {
         type: Date,
         default: Date.now()
     }

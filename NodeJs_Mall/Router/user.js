@@ -27,4 +27,4 @@ router.post("/login", async (request, response) => {
     let encrypt = encryptUtil.aesEncrypt(JSON.stringify(token), config.TOKEN_KEY);
     response.success(encrypt);
 })
-module.exports=router
+module.exports = router

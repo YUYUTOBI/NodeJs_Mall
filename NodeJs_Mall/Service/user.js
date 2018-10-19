@@ -38,8 +38,7 @@ async function login(user) {
     if (password == null || password.trim().length == 0) {
         throw Error("密码不能为空");
     }
-    user.password= encryptUtil.md5Hmac(password,user.username)
-    console.log(user.password+"-------")
+    user.password = encryptUtil.md5Hmac(password, user.username)
     user = await User.findOne(user);
     user.password = "";
     return user;
